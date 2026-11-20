@@ -1,59 +1,20 @@
-# TiendaProducto
+# Práctica: Presentación de un producto en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.3.0.
+Estudiant: Amalia Rocha Coria
 
-## Development server
+## Respuestas
 
-To start a local development server, run:
+**1. ¿Qué función cumple @Component?**
+Le dice a Angular que esa clase es un componente, o sea, una pieza de la página. También le indica cuál es su HTML y su CSS.
 
-```bash
-ng serve
-```
+**2. ¿Para qué sirve la interfaz Producto?**
+Sirve como un molde que define cómo debe ser un producto: qué datos tiene y de qué tipo son. Así evitamos errores, por ejemplo poner un texto donde va un número.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+**3. ¿Qué hace {{ }}?**
+Muestra en la página el valor de una propiedad que está en app.ts. Por ejemplo, `{{ nombreTienda }}` muestra el nombre de la tienda.
 
-## Code scaffolding
+**4. ¿Qué diferencia existe entre @if y @for?**
+`@if` muestra o esconde algo según una condición, por ejemplo "Tienda abierta" o "Tienda cerrada". `@for` repite algo por cada elemento de una lista, como las categorías.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**5. ¿Por qué tiendaAbierta utiliza el tipo boolean?**
+Porque solo tiene dos posibles estados: abierta o cerrada. Boolean guarda justo eso, verdadero o falso.

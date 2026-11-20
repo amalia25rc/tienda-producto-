@@ -1,12 +1,26 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+
+interface Producto {
+  nombre: string;
+  precio: number;
+  disponible: boolean;
+}
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('tienda-producto');
+  nombreTienda: string = 'Mi Tienda';
+  encargado: string = 'Amalia';
+  numeroSucursal: number = 1;
+  tiendaAbierta: boolean = true;
+  categorias: string[] = ['Cascos', 'Chaquetas', 'Botas', 'Guantes'];
+
+  producto: Producto = {
+    nombre: 'Casco AGV Pista GP R Black',
+    precio: 4800,
+    disponible: true
+  };
 }
